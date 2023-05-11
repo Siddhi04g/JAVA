@@ -1,4 +1,4 @@
-package Stack.StackClass;
+package Stack.StackClassUsingArray;
 
 public class StackUsingArray {
     private int data[];
@@ -12,13 +12,16 @@ public class StackUsingArray {
         data = new int[capacity];
         top = -1;
     }
-    public boolean isEmpty(){
+
+    public boolean isEmpty(){ //O(1):time
         return (top == -1);
     }
-    public int size(){
+
+    public int size(){ //O(1):time
         return top+1;
     }
-    public int peek() throws StackEmptyException{
+
+    public int peek() throws StackEmptyException{ //O(1):time
         if(size() == 0){
             //StackEmptyException
             StackEmptyException e = new StackEmptyException();
@@ -26,15 +29,25 @@ public class StackUsingArray {
         }
         return data[top];
     }
-    public void push(int ele) throws StackFullException{
+
+    public void push(int ele) throws StackFullException{ //O(1):time
         if(size() == data.length){
-            //StackFullException
-            StackFullException e = new StackFullException();
-            throw e;
+            // //StackFullException
+            // StackFullException e = new StackFullException();
+            // throw e;
+            doubleCapacity(); //O(n) :time
         }
         data[++top] = ele;
     }
-    public int pop() throws StackEmptyException{
+
+    private void doubleCapacity(){ //O(n):time
+        int temp[] = data; // original array save kiya h temp mei;
+        data = new int[2*temp.length];
+        for(int i = 0 ; i <= top ; i++){
+            data[i] = temp[i];
+        }
+    }
+    public int pop() throws StackEmptyException{ //O(1):time
         if(size() == 0){
             //StackEmptyException
             StackEmptyException e = new StackEmptyException();
