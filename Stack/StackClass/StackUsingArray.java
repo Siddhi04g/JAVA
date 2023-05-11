@@ -1,4 +1,4 @@
-package Stack;
+package Stack.StackClass;
 
 public class StackUsingArray {
     private int data[];
