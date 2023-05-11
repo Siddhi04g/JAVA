@@ -1,5 +1,5 @@
 //Ques -2
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class AddTwoNumbers {
     public Node addTwoNumbers(Node l1, Node l2) {

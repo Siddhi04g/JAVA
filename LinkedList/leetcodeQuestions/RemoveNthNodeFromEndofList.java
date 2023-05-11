@@ -1,6 +1,6 @@
 
 //Ques-19
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class RemoveNthNodeFromEndofList {
     public Node removeNthFromEnd(Node head, int n) {

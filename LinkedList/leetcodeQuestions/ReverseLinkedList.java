@@ -1,6 +1,6 @@
 
 //Ques-206
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class ReverseLinkedList {
     public Node reverseList(Node head) {

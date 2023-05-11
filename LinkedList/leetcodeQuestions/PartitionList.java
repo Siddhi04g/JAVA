@@ -12,7 +12,7 @@ Time complexity: O(n)
 
 Space complexity: O(n) 
 */
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class PartitionList {
     public Node partition(Node head, int x) {

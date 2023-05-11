@@ -1,5 +1,5 @@
 //Ques - 1019
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import java.util.*;
 
 import LinkedList.LL.*;

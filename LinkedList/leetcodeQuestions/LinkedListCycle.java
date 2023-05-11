@@ -1,5 +1,5 @@
 //Ques-141
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class LinkedListCycle {
     public boolean hasCycle(Node head) {

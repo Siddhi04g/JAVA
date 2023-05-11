@@ -1,5 +1,5 @@
 //Ques- 148
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class SortList {
     public Node sortList(Node head) {

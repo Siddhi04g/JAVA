@@ -1,5 +1,5 @@
 //Ques- 707
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 
 class MyLinkedList {
 

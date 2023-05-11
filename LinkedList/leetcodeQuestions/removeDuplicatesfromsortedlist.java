@@ -1,5 +1,5 @@
 //  Ques- 83
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 class Solution {
     public Node deleteDuplicates(Node head) {

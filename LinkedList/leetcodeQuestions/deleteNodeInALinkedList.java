@@ -1,5 +1,5 @@
 
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class deleteNodeInALinkedList {
     public void deleteNode(Node node) {

@@ -1,6 +1,6 @@
 
 //Ques- 234
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class palindromeLinkedList {
     public boolean isPalindrome(Node head) {

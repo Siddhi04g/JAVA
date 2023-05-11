@@ -1,5 +1,5 @@
 // Ques- 725
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class SplitLinkedListInParts {
     public Node[] splitListToParts( Node head, int k) {

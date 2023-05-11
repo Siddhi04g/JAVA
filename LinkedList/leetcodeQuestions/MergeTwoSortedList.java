@@ -1,5 +1,5 @@
 //Ques- 21
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class MergeTwoSortedList {
     public Node mergeTwoLists(Node list1,Node list2) {

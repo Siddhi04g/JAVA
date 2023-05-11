@@ -1,5 +1,5 @@
 //Ques-160
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class IntersectionOfTwoLinkedLists {
     public Node getIntersectionNode(Node headA, Node headB) {

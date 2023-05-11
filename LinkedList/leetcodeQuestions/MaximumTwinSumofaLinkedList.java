@@ -1,5 +1,5 @@
 //Ques-2130
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class MaximumTwinSumofaLinkedList {
     public int pairSum(Node head) {

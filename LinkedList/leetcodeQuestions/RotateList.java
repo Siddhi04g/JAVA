@@ -1,5 +1,5 @@
 //Ques-61
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class RotateList {
     public Node oddEvenList(Node head) {

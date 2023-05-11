@@ -1,5 +1,5 @@
 //Ques- 876
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class MiddleOfLinkedList {
     public Node middleNode(Node head) {

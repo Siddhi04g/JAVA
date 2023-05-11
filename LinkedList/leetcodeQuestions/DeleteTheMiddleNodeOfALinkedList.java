@@ -1,5 +1,5 @@
 //Ques-2095 
-package LinkedList.leetcode;
+package LinkedList.leetcodeQuestions;
 import LinkedList.LL.*;
 public class DeleteTheMiddleNodeOfALinkedList {
     public Node deleteMiddle(Node head) {
