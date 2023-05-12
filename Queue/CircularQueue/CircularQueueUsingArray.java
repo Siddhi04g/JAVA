@@ -1,46 +1,48 @@
-package Queue.QueueClassUsingArray;
+package Queue.CircularQueue;
 
-public class QueueUsingArray {
+public class CircularQueueUsingArray {
     private int[] data;
     private int front;
     private int rear;
     private int size;
 
-    public QueueUsingArray(){
+    public CircularQueueUsingArray(){
         data = new int[10];
         front = -1;
         rear = -1;
         size = 0;
     }
-    public QueueUsingArray(int capacity){
+    public CircularQueueUsingArray(int capacity){
         data = new int[capacity];
         front = -1;
         rear = -1;
         size = 0;
     }
 
-    int size(){ //O(1):time
+    int size(){
         return size;
     }
 
-    boolean isEmpty(){ //O(1):time
+    boolean isEmpty(){
        return size==0;
     }
 
-    int peek() throws QueueEmptyException{ //O(1):time
+    int peek() throws QueueEmptyException{
         if(front == -1){  //size == 0
             throw new QueueEmptyException();
         }
         return data[front];
     }
 
-    void enqueue(int element) throws QueueFullException{ //O(1):time
+    void enqueue(int element) throws QueueFullException{
         if(size == data.length){
             //throw new QueueFullException();
             doubleCapacity();
         }
         if(size == 0) front = 0;
-
+        rear++;
+        rear = (rear + 1) % data.length;
+        //if(rear == data.length) rear = 0;
         data[++rear] = element;
         size++;
     }
@@ -55,12 +57,14 @@ public class QueueUsingArray {
         }
     }
 
-    int dequeue()throws QueueEmptyException{//O(1):time
+    int dequeue()throws QueueEmptyException{
         if(front == -1){
             throw new QueueEmptyException();
         }
-
-        int temp = data[front++];
+        front ++;
+        front = (front + 1) % data.length;
+        // if(front == data.length) front = 0;
+        int temp = data[front];
         size --;
         if(front > rear){ //size = 0
             front = -1;
